@@ -23,17 +23,17 @@ Programme contains an id, name, starting  date, end date, room id and max number
 Each model has its own separate controller. Create and Delete methods are available.
 ###  Implementation
 ##### Functionalities
-[x] Create User
-[x] Remove User
-[] Validate User CNP
-[x] Create Room
-[x] Remove Room
-[x] Create Programme
-[x] Remove Programme
-[] Create Reservation
-  [] Refuse if programme is at max capacity
-  [] Refuse if user has another reservation in that time interval
-[] Remove Reservation
+- [x] Create User
+- [x] Remove User
+- [x] Validate User CNP
+- [x] Create Room
+- [x] Remove Room
+- [x] Create Programme
+- [x] Remove Programme
+- [x] Create Reservation
+- - [x] Refuse if programme is at max capacity
+- - [x] Refuse if user has another reservation in that time interval
+- [x] Remove Reservation
 ##### Business rules
 CNPs must be validated, Rooms, Reservations and Programmes must be validated to not have null reference keys.
 ##### 3rd party libraries (if applicable)
