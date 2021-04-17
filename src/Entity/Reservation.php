@@ -41,5 +41,34 @@ class Reservation
      */
     private $programmeid;
 
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getUserid(): ?Users
+    {
+        return $this->userid;
+    }
+
+    public function setUserid(?Users $userid): self
+    {
+        $this->userid = $userid;
+
+        return $this;
+    }
+
+    public function getProgrammeid(): ?Programmes
+    {
+        return $this->programmeid;
+    }
+
+    public function setProgrammeid(?Programmes $programmeid): self
+    {
+        $this->programmeid = $programmeid;
+
+        return $this;
+    }
+
 
 }

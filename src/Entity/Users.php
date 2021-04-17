@@ -28,12 +28,22 @@ class Users
      */
     private $cnp;
 
-    /**
-     * @var bool|null
-     *
-     * @ORM\Column(name="isAdmin", type="boolean", nullable=true)
-     */
-    private $isadmin;
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getCnp(): ?string
+    {
+        return $this->cnp;
+    }
+
+    public function setCnp(string $cnp): self
+    {
+        $this->cnp = $cnp;
+
+        return $this;
+    }
 
 
 }

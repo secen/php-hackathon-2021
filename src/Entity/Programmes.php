@@ -59,5 +59,70 @@ class Programmes
      */
     private $roomid;
 
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(?string $name): self
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    public function getMaxparticipans(): ?int
+    {
+        return $this->maxparticipans;
+    }
+
+    public function setMaxparticipans(int $maxparticipans): self
+    {
+        $this->maxparticipans = $maxparticipans;
+
+        return $this;
+    }
+
+    public function getStartingdate(): ?\DateTimeInterface
+    {
+        return $this->startingdate;
+    }
+
+    public function setStartingdate(\DateTimeInterface $startingdate): self
+    {
+        $this->startingdate = $startingdate;
+
+        return $this;
+    }
+
+    public function getEndingdate(): ?\DateTimeInterface
+    {
+        return $this->endingdate;
+    }
+
+    public function setEndingdate(\DateTimeInterface $endingdate): self
+    {
+        $this->endingdate = $endingdate;
+
+        return $this;
+    }
+
+    public function getRoomid(): ?Rooms
+    {
+        return $this->roomid;
+    }
+
+    public function setRoomid(?Rooms $roomid): self
+    {
+        $this->roomid = $roomid;
+
+        return $this;
+    }
+
 
 }

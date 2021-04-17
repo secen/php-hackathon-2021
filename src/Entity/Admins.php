@@ -5,12 +5,12 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Rooms
+ * Admins
  *
- * @ORM\Table(name="rooms")
+ * @ORM\Table(name="admins")
  * @ORM\Entity
  */
-class Rooms
+class Admins
 {
     /**
      * @var int
@@ -22,25 +22,25 @@ class Rooms
     private $id;
 
     /**
-     * @var string|null
+     * @var string
      *
-     * @ORM\Column(name="Name", type="string", length=255, nullable=true)
+     * @ORM\Column(name="AuthToken", type="string", length=255, nullable=false)
      */
-    private $name;
+    private $authtoken;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getName(): ?string
+    public function getAuthtoken(): ?string
     {
-        return $this->name;
+        return $this->authtoken;
     }
 
-    public function setName(?string $name): self
+    public function setAuthtoken(string $authtoken): self
     {
-        $this->name = $name;
+        $this->authtoken = $authtoken;
 
         return $this;
     }
