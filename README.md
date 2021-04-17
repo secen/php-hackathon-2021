@@ -32,7 +32,7 @@ In this section, please provide a brief overview of the design of your applicati
 ##### Business rules
 CNPs must be validated, Rooms, Reservations and Programmes must be validated to not have null reference keys.
 ##### 3rd party libraries (if applicable)
-Please give a brief review of the 3rd party libraries you used and how/ why you've integrated them into your project.
+I use the symfony framework using friendsofsymfony/rest-bundle to create the REST methods. I also use the usual symfony libraries for database access, controller creation, entity creation and so on.
 
 ##### Environment
 | Name | Choice |
