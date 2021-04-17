@@ -13,9 +13,14 @@ You have estimated it takes 4 weeks to build this solution. You have 2 days. Goo
 
 ## Technical documentation
 ### Data and Domain model
-In this section, please describe the main entities you managed to identify, the relationships between them and how you mapped them in the database.
+I use user, admin, room, reservation and programme models.
+User contains an id and cnp.
+Admin contains an id and an authentication token.
+Room contains an id and name.
+Reservation contains an id, user id and programme id.
+Programme contains an id, name, starting  date, end date, room id and max number of participants.
 ### Application architecture
-In this section, please provide a brief overview of the design of your application and highlight the main components and the interaction between them.
+Each model has its own separate controller. Create and Delete methods are available.
 ###  Implementation
 ##### Functionalities
 [x] Create User
