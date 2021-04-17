@@ -22,6 +22,10 @@ use FOS\RestBundle\Controller\AbstractFOSRestController;
 class ReservationController extends AbstractFOSRestController
 {
 
+    /**
+     * @param Programmes $programme
+     * @return bool
+     */
     public function isProgrammeFull(Programmes $programme)
     {
         $sum = 0;
@@ -34,6 +38,11 @@ class ReservationController extends AbstractFOSRestController
         }
         return $programme->getMaxparticipans() == $sum;
     }
+    /**
+     * @param Users $user
+     * @param Reservation $reservation
+     * @return bool
+     */
     public function hasOverlappingReservation(Users $user,Reservation $reservation)
     {
         $entityManager = $this->getDoctrine()->getManager();
