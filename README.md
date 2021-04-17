@@ -18,42 +18,51 @@ In this section, please describe the main entities you managed to identify, the 
 In this section, please provide a brief overview of the design of your application and highlight the main components and the interaction between them.
 ###  Implementation
 ##### Functionalities
-For each of the following functionalities, please tick the box if you implemented it and describe its input and output in your application:
-
-[x] Brew coffee \
-[ ] Create programme \
-[ ] Delete programme \
-[ ] Book a programme 
-
+[x] Create User
+[x] Remove User
+[] Validate User CNP
+[x] Create Room
+[x] Remove Room
+[x] Create Programme
+[x] Remove Programme
+[] Create Reservation
+  [] Refuse if programme is at max capacity
+  [] Refuse if user has another reservation in that time interval
+[] Remove Reservation
 ##### Business rules
-Please highlight all the validations and mechanisms you identified as necessary in order to avoid inconsistent states and apply the business logic in your application.
-
+CNPs must be validated, Rooms, Reservations and Programmes must be validated to not have null reference keys.
 ##### 3rd party libraries (if applicable)
 Please give a brief review of the 3rd party libraries you used and how/ why you've integrated them into your project.
 
 ##### Environment
-Please fill in the following table with the technologies you used in order to work at your application. Feel free to add more rows if you want us to know about anything else you used.
 | Name | Choice |
 | ------ | ------ |
-| Operating system (OS) | e.g. Ubuntu 20.04 |
-| Database  | e.g. MySQL 8.0|
-| Web server| e.g. Nginx |
-| PHP | e.g. 7.0 |
-| IDE | e.g. PhpStorm |
+| Operating system (OS) | Windows 10 Pro |
+| Database  | MySQL 8.0|
+| Web server| Apache |
+| PHP | 7.0 |
+| IDE | PhpStorm |
 
 ### Testing
-In this section, please list the steps and/ or tools you've used in order to test the behaviour of your solution.
+I've used Insomnia for manual testing of the API.
 
 ## Feedback
-In this section, please let us know what is your opinion about this experience and how we can improve it:
 
 1. Have you ever been involved in a similar experience? If so, how was this one different?
+ I have worked for schoolwork on a smiliar hackathon, technology was C++. We had to make an airplane reservation system.
 2. Do you think this type of selection process is suitable for you?
-3. What's your opinion about the complexity of the requirements?
-4. What did you enjoy the most?
-5. What was the most challenging part of this anti hackathon?
-6. Do you think the time limit was suitable for the requirements?
-7. Did you find the resources you were sent on your email useful?
-8. Is there anything you would like to improve to your current implementation?
-9. What would you change regarding this anti hackathon?
-
+ Yes, because it shows the recruiters that I know how to solve actual business problems.
+4. What's your opinion about the complexity of the requirements?
+ They do not seem unreasonably complex.
+6. What did you enjoy the most?
+ Finally putting into practice my PHP Symfony skills on a business requirement, not just small projects that I do on my own.
+8. What was the most challenging part of this anti hackathon?
+ Getting the web server to behave the way I want it to.
+10. Do you think the time limit was suitable for the requirements?
+ Yes.
+12. Did you find the resources you were sent on your email useful?
+ Somewhat, I already knew about them beforehand.
+14. Is there anything you would like to improve to your current implementation?
+ Automatic Routing would make things a bit easier, but I wasn't able to get the configuration file to work.
+16. What would you change regarding this anti hackathon?
+ Nothing, it's a good exercise.
