@@ -49,20 +49,29 @@ I've used Insomnia for manual testing of the API.
 ## Feedback
 
 1. Have you ever been involved in a similar experience? If so, how was this one different?
+ 
  I have worked for schoolwork on a smiliar hackathon, technology was C++. We had to make an airplane reservation system.
 2. Do you think this type of selection process is suitable for you?
+ 
  Yes, because it shows the recruiters that I know how to solve actual business problems.
 4. What's your opinion about the complexity of the requirements?
+ 
  They do not seem unreasonably complex.
 6. What did you enjoy the most?
+
  Finally putting into practice my PHP Symfony skills on a business requirement, not just small projects that I do on my own.
 8. What was the most challenging part of this anti hackathon?
+ 
  Getting the web server to behave the way I want it to.
 10. Do you think the time limit was suitable for the requirements?
+ 
  Yes.
 12. Did you find the resources you were sent on your email useful?
+ 
  Somewhat, I already knew about them beforehand.
 14. Is there anything you would like to improve to your current implementation?
+ 
  Automatic Routing would make things a bit easier, but I wasn't able to get the configuration file to work.
 16. What would you change regarding this anti hackathon?
+ 
  Nothing, it's a good exercise.
