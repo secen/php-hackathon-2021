@@ -22,6 +22,17 @@ use FOS\RestBundle\Controller\AbstractFOSRestController;
 
 class ProgrammeController extends AbstractFOSRestController
 {
+    public function programmeOverlaps(Programmes $programme)
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $programmes = $entityManager->getRepository(Programmes::class);
+        foreach($programmes as &$prog)
+        {
+            if($prog->getStartingdate() < $programme->getEndingdate() and $prog->getEndingdate() > $programme->getStartingdate() )
+                return true;
+        }
+        return false;
+    }
     /**
      * @Route("/createProgramme")
      * @RequestParam(name="AuthToken")
@@ -50,6 +61,8 @@ class ProgrammeController extends AbstractFOSRestController
             $selectedRoom = $entityManager->getRepository(Rooms::class)->findBy(['name'=>$programmeRoomName])[0];
             $programme->setRoomid($selectedRoom);
             $programme->setStartingdate($programmeStartDate);
+            if($this->programmeOverlaps($programme))
+                return $this->view("Programme overlaps with an existing one", Response::HTTP_BAD_REQUEST);
             $entityManager->persist($programme);
             $entityManager->flush();
             return $this->view("Added Programme", Response::HTTP_ACCEPTED);
